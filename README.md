@@ -15,6 +15,12 @@ The project was built to answer a question that most "does leverage work?" blog 
 **Kelly-criterion position sizing and sustained-outperformance analysis**
 ![Kelly criterion](screenshots/03_kelly_criterion.png)
 
+**Starting-date sensitivity — rolling 20-year windows**
+![Starting-date sensitivity](screenshots/Capture.JPG)
+
+**Time-weighted dominance — probability leverage stays ahead by horizon**
+![Time-weighted dominance](screenshots/Capture2.JPG)
+
 ## Features
 
 ### Historical Backtest
@@ -72,6 +78,19 @@ The repo ships with `F-F_Research_Data_Factors_daily.csv` (daily Mkt-RF, SMB, HM
 ## Data Source
 
 Daily factor data is from Kenneth R. French's [Data Library](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html) (Fama-French Research Data Factors, daily), used under the terms described there. It is provided for research/educational use.
+
+## Work in Progress
+
+This project is still evolving. Known gaps and planned work:
+
+- **Sharpe/Sortino are not yet correct for the Monte Carlo and block-bootstrap simulations once leverage is introduced.** The periodic-compounding risk-ratio calculation was built for the historical backtest and doesn't yet correctly carry over to leveraged simulated paths — this needs to be fixed before those numbers can be trusted.
+- **Diversifiers (managed futures, bonds, gold) are not modeled yet.** The working hypothesis is that adding these as diversifiers alongside a leveraged core would improve risk-adjusted returns while cushioning the drawdowns leverage amplifies — this is a planned addition, not yet implemented.
+- **200-day moving average timing overlay** — planned test to see whether a simple trend filter meaningfully changes the leverage/drawdown trade-off.
+- **50% momentum / 50% small-cap blended portfolio** — planned test, as this combination looks promising and hasn't been backtested here yet.
+
+### What the project has shown so far
+
+Leverage widens the whole distribution of outcomes, not just the average one: it raises both the odds of a standout "home run" result and the odds of a near-total loss, and it introduces a much wider spread of plausible in-between outcomes than an unleveraged position ever produces. That's the core trade-off the tool is built to make visible rather than hide behind a single expected-return number.
 
 ## Disclaimer
 
