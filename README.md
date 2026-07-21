@@ -7,7 +7,7 @@ The project was built to answer a question that most "does leverage work?" blog 
 ## Screenshots
 
 **Historical backtest — growth of $1, log-scale, cost-adjusted**
-![Dashboard overview](screenshotsdashboard_overview_upd.png)
+![Dashboard overview](screenshots/dashboard_overview_upd.png)
 
 **Monte Carlo projection — percentile fan chart across simulated paths**
 ![Monte Carlo projection](screenshots/02_monte_carlo_projection.png)
