@@ -90,7 +90,7 @@ This project is still evolving. Known gaps and planned work:
 
 ### What the project has shown so far
 
-Leverage widens the whole distribution of outcomes, not just the average one: it raises both the odds of a standout "home run" result and the odds of a near-total loss, and it introduces a much wider spread of plausible in-between outcomes than an unleveraged position ever produces. That's the core trade-off the tool is built to make visible rather than hide behind a single expected-return number.
+Leverage widens the whole distribution of outcomes, not just the average one: it raises both the odds of a standout "home run" result (7000x on the 2x leverage best case scenario) and the odds of a near-total loss, and it introduces a much wider spread of plausible in-between outcomes than an unleveraged position ever produces. That's the core trade-off the tool is built to make visible rather than hide behind a single expected-return number.
 
 ## Disclaimer
 
