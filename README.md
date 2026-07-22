@@ -10,7 +10,7 @@ The project was built to answer a question that most "does leverage work?" blog 
 ![Dashboard overview](screenshots/dashboard_overview_upd.png)
 
 **Monte Carlo projection — percentile fan chart across simulated paths**
-![Monte Carlo projection](screenshots/02_monte_carlo_projection.png)
+![Monte Carlo projection](screenshots/montecarlo.JPG)
 
 **Kelly-criterion position sizing and sustained-outperformance analysis**
 ![Kelly criterion](screenshots/03_kelly_criterion.png)
